@@ -1,0 +1,11 @@
+# Term Frequencies {.unnumbered}
+
+```{r, echo=FALSE, results='asis'}
+cat('<div style="max-width:100%; overflow-x:none;">')
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/tfidf_id.svg")))
+cat('</div>')
+
+cat('<div style="max-width:100%; overflow-x:none;">')
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/tfidf_time.svg")))
+cat('</div>')
+```

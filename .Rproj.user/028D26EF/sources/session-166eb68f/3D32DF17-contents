@@ -1,0 +1,21 @@
+# Metadata Analysis {.unnumbered}
+
+```{r, echo=FALSE, results='asis'}
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/spatial.html")))
+
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/ancestry.html")))
+
+cat('<div style="display:flex; flex-direction:row; align-items:center; gap:20px;"> <div style="flex:1;">')
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/tempmin.html")))
+cat('</div><div style="flex:1;">')
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/tempmax.html")))
+cat('</div></div>')
+
+cat('<div style="display:flex; flex-direction:row; align-items:center; gap:20px;"> <div style="flex:1;">')
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/jamaicatempv1.html")))
+cat('</div><div style="flex:1;">')
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/jamaicatempv2.html")))
+cat('</div></div>')
+
+cat(gsub("<!DOCTYPE html>", "", xfun::file_string("output/conduct.html")))
+```

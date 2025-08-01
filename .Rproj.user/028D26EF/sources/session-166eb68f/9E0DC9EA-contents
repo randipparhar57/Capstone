@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "From Stories to Strategy: Oral Histories as Qualitative Evidence for Neighborhood Planning"
+  author: "Randip Parhar"
+  date: "August 2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: comp_analysis.qmd
+      chapters: 
+        - metadata_analysis.qmd
+        - term_freq.qmd
+        - ngrams.qmd
+        - topic_model.qmd
+    - qual_analysis.qmd
+    - applications.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

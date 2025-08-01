@@ -1,0 +1,38 @@
+{
+  "index.qmd": {
+    "index.html": "75f4c135"
+  },
+  "intro.qmd": {
+    "intro.html": "0ade1714"
+  },
+  "summary.qmd": {
+    "summary.html": "4f42bc6e"
+  },
+  "references.qmd": {
+    "references.html": "8c79f2b9"
+  },
+  "comp_analysis.qmd": {
+    "comp_analysis.html": "1e63b9c2"
+  },
+  "qual_analysis.qmd": {
+    "qual_analysis.html": "b71c0d3f"
+  },
+  "applications.qmd": {
+    "applications.html": "6ad48393"
+  },
+  "conclusion.qmd": {
+    "conclusion.html": "8d9aa170"
+  },
+  "metadata_analysis.qmd": {
+    "metadata_analysis.html": "15d6bcaf"
+  },
+  "term_freq.qmd": {
+    "term_freq.html": "60db855a"
+  },
+  "ngrams.qmd": {
+    "ngrams.html": "b88b48ae"
+  },
+  "topic_model.qmd": {
+    "topic_model.html": "e0513d61"
+  }
+}

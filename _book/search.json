@@ -1,0 +1,74 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "From Stories to Strategy: Oral Histories as Qualitative Evidence for Neighborhood Planning",
+    "section": "",
+    "text": "Preface\nExplain what this website will consist of. Acknowledgements.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Explain inspiration for project. Provide context and explanation.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "comp_analysis.html",
+    "href": "comp_analysis.html",
+    "title": "Computational Analysis",
+    "section": "",
+    "text": "Overview of what quantitative analysis is, what tools used in R, and what measures were explored.",
+    "crumbs": [
+      "Computational Analysis"
+    ]
+  },
+  {
+    "objectID": "metadata_analysis.html",
+    "href": "metadata_analysis.html",
+    "title": "Metadata Analysis",
+    "section": "",
+    "text": "Spatial Metadata\n\n\n\n\nAll locations referenced in interviews pertaining to Jamaica, Queens, NY.\n\n\n\n\nLocation\n\n\nN\n\n\n\n\n\n\nJamaica, Queens, NY\n\n\n14 (87.50%)\n\n\n\n\nFlushing, Queens, NY\n\n\n3 (18.75%)\n\n\n\n\nForest Hills, Queens, NY\n\n\n3 (18.75%)\n\n\n\n\nQueens College, Queens, NY\n\n\n3 (18.75%)\n\n\n\n\nManhattan, NY\n\n\n2 (12.50%)\n\n\n\n\nJamaica Estates, Queens, NY\n\n\n1 (6.25%)\n\n\n\n\nJamaica Hills, Queens, NY\n\n\n1 (6.25%)\n\n\n\n\n\n\nCount and Percentage shows the proportion of interviews where the location was mentioned. Example: Manhattan, NY appears in 13% of all interviews.\n\n\n\n\nThe following locations were each mentioned once:\n\n\n\n\nBronx locations: Hunts Point\n\n\n\n\nBrooklyn locations: Bedford-Stuyvesant\n\n\n\n\nManhattan locations: Chelsea, Yorkville\n\n\n\n\nQueens locations: Bayside, Douglaston, Flushing Meadows Corona Park, Forest Park, Fresh Meadows, Hillcrest, Hollis, Jackson Heights, Kew Gardens Hills, Ozone Park, Queens Village, Queensborough Community College, Richmond Hill, Ridgewood\n\n\n\n\nLong Island locations: Commack, Roslyn\n\n\n\n\nOther locations in the U.S.: Los Angeles, Rhode Island, Southern California, Southern Florida\n\n\n\n\nLocations outside the U.S.: Czechoslovakia, Guyana, Istanbul\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAncestries Mentioned by Interviewees\n\n\n\n\nAncestry\n\n\nN\n\n\n\n\n\n\nGuyanese\n\n\n3 (18.75%)\n\n\n\n\nGerman\n\n\n2 (12.50%)\n\n\n\n\nPolish\n\n\n2 (12.50%)\n\n\n\n\nArmenian\n\n\n1 (6.25%)\n\n\n\n\nBarbadian\n\n\n1 (6.25%)\n\n\n\n\nCzech\n\n\n1 (6.25%)\n\n\n\n\nHaitian\n\n\n1 (6.25%)\n\n\n\n\nIndian\n\n\n1 (6.25%)\n\n\n\n\nIrish\n\n\n1 (6.25%)\n\n\n\n\nItalian\n\n\n1 (6.25%)\n\n\n\n\nJamaican\n\n\n1 (6.25%)\n\n\n\n\n\n\nCount and Percentage shows the proportion of interviews in which the ancestry was mentioned. Example: German ancestry is mentioned in 13% of all interviews.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEarliest Recalled Year\n\n\n\n\nTemporal Start\n\n\nN\n\n\n\n\n\n\n1950\n\n\n6 (37.50%)\n\n\n\n\n1970\n\n\n2 (12.50%)\n\n\n\n\n1980\n\n\n2 (12.50%)\n\n\n\n\n1940\n\n\n1 (6.25%)\n\n\n\n\n1946\n\n\n1 (6.25%)\n\n\n\n\n1960\n\n\n1 (6.25%)\n\n\n\n\n1990\n\n\n1 (6.25%)\n\n\n\n\n1997\n\n\n1 (6.25%)\n\n\n\n\n2020\n\n\n1 (6.25%)\n\n\n\n\n\n\nCount and percentage represent the proportion of interviews with a specific start year. Example: 38% of the interviews include memories dating back to 1950.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLatest Recalled Year\n\n\n\n\nTemporal End\n\n\nN\n\n\n\n\n\n\n2020\n\n\n7 (43.75%)\n\n\n\n\n2021\n\n\n5 (31.25%)\n\n\n\n\n2023\n\n\n2 (12.50%)\n\n\n\n\n1960\n\n\n1 (6.25%)\n\n\n\n\n1992\n\n\n1 (6.25%)\n\n\n\n\n\n\nCount and percentage represent the proportion of interviews with a specific start year. Example: 32% of the interviews include memories extending up to 2021.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTemporal Contexts of Interviewee Dialogue Segments Set in Jamaica, Queens\n\n\n\n\nTime Period\n\n\nN\n\n\n\n\n\n\n1950s-1960s\n\n\n175 (46.92%)\n\n\n\n\n1970s-1980s\n\n\n62 (16.62%)\n\n\n\n\n2010s-2020s\n\n\n47 (12.60%)\n\n\n\n\n1990s-2000s\n\n\n46 (12.33%)\n\n\n\n\nUnknown\n\n\n20 (5.36%)\n\n\n\n\nPre-COVID\n\n\n14 (3.75%)\n\n\n\n\n1980s-1990s\n\n\n7 (1.88%)\n\n\n\n\n1930s-1940s\n\n\n2 (0.54%)\n\n\n\n\n\n\nCount and percentage represent the proportion of Jamaica dialogue segments from interviewees occurring within a specific time period. For example, 47% of the segments reflect memories from the 1950s–1960s. The most recent memory dates back to 2023.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTemporal Distribution of Interviews Featuring Memories Set in Jamaica, Queens\n\n\n\n\nTime Period\n\n\nN\n\n\n\n\n\n\n2010s-2020s\n\n\n11 (68.75%)\n\n\n\n\n1950s-1960s\n\n\n7 (43.75%)\n\n\n\n\n1970s-1980s\n\n\n6 (37.50%)\n\n\n\n\n1990s-2000s\n\n\n6 (37.50%)\n\n\n\n\n1980s-1990s\n\n\n2 (12.50%)\n\n\n\n\nPre-COVID\n\n\n2 (12.50%)\n\n\n\n\nUnknown\n\n\n2 (12.50%)\n\n\n\n\n1930s-1940s\n\n\n1 (6.25%)\n\n\n\n\n\n\nCount and percentage represent the proportion of interviews conducted with references to Jamaica, Queens, during each time period. For example, 69% of the interviews included memories from the 2010s–2020s.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDate the Interview was Conducted\n\n\n\n\nInterview Conducted\n\n\nN\n\n\n\n\n\n\n2020-12\n\n\n4 (25.00%)\n\n\n\n\n2020-10\n\n\n2 (12.50%)\n\n\n\n\n2020-11\n\n\n2 (12.50%)\n\n\n\n\n2021-02\n\n\n2 (12.50%)\n\n\n\n\n2021-03\n\n\n1 (6.25%)\n\n\n\n\n2021-05\n\n\n1 (6.25%)\n\n\n\n\n2021-06\n\n\n1 (6.25%)\n\n\n\n\n2023-02\n\n\n1 (6.25%)\n\n\n\n\n2023-04\n\n\n1 (6.25%)\n\n\n\n\n2023-05\n\n\n1 (6.25%)\n\n\n\n\n\n\nCount and percentage represent the proportion of interviews conducted during specific time periods. For example, 25% of the interviews were conducted in December 2020.",
+    "crumbs": [
+      "Computational Analysis",
+      "Metadata Analysis"
+    ]
+  },
+  {
+    "objectID": "qual_analysis.html",
+    "href": "qual_analysis.html",
+    "title": "Qualitative Analysis",
+    "section": "",
+    "text": "Overview of what qualitative analysis is, what tools used in R, and how data was explored and analyzed.",
+    "crumbs": [
+      "Qualitative Analysis"
+    ]
+  },
+  {
+    "objectID": "applications.html",
+    "href": "applications.html",
+    "title": "Applications",
+    "section": "",
+    "text": "Discuss applications of oral history analysis in urban/neighborhood planning - tying back to the intro. Incorporate modern day data on themes discussed in oral histories.",
+    "crumbs": [
+      "Applications"
+    ]
+  },
+  {
+    "objectID": "term_freq.html",
+    "href": "term_freq.html",
+    "title": "Term Frequencies",
+    "section": "",
+    "text": "0.01 0.02 0.01 0.01 0.01                                 0.02 0.03 0.05 0.05 0.05                                    0.05 0.13 0.05 0.06 0.04 0.04 0.04 0.04                              0.03 0.02 0.03 0.02 0.02                             0.03 0.06 0.03 0.03 0.03                                 0.03 0.02 0.03 0.03 0.02 0.02 0.02                               0.06 0.03 0.05 0.03 0.05 0.05                                  0.02 0.02 0.03 0.03 0.02 0.02 0.02                                     0.03 0.04 0.04 0.03 0.03 0.03 0.03 0.03                               0.01 0.01 0.01 0.01 0.01 0.01                                      0.01 0.02 0.02 0.02 0.01 0.01 0.01 0.01                                       0.3 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1                                   0.09 0.07 0.05 0.05 0.05 0.05 0.05 0.05                               0.03 0.03 0.04 0.03 0.03                               0.02 0.04 0.02 0.02 0.02                                    0.1 0.08 0.05 0.05 0.05 0.05 0.05           90854           93964           371101           585801           60854           70505           70854           80854           15983           18854           20854           46605           1854           5796           11854           14964   cart closely flux project remotely paper forward hoping         community selling mentality black instance      laughing boots turkish father armenian      john’s league overload sensory tricks magic team        elevated hamster hamsters savings woolworth’s pizza donut suphtin         dude legendary shit hip hop jazz       garden joe stacks tilly move idea backyard spend         commercialization feeling’s indian kissena knit rises stitch tight crowded fabric           chartered queensborough buses program laughs      homework tutoring volunteer section programs retired library        leather pictures nest preserving produce picture       montgomery tour true building cops forensic wards        diner godfather teacher mom colosseum      loved mother bloomberg condominium failing      double mask mondays pantry lines food thursday masks         children movie movies grade catholic      TF-IDF by Interview  \n\n\n\n\n\n \n\n                                           0.07 0.05 0.04 0.07 0.04 0.04 0.04 0.04 0.04                            0.01 0.01 0.01 0.01 0.01                               0.01 0.01 0.01 0.01 0.01 0.01                                       0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01                                0.01 0.01 0.01 0.01 0.01 0.01                           0.02 0.02 0.02 0.02 0.02                            0.02 0.03 0.02 0.02 0.02                                  0.02 0.02 0.02 0.02 0.01 0.01 0.01 0.01           1990s-2000s           2010s-2020s           Pre-COVID           Unknown           1930s-1940s           1950s-1960s           1970s-1980s           1980s-1990s   diner cooked lucille’s trade ihop      brothers liquor power sense selling mentality community instance         barbados cassettes idea teacher godfather spend       paper volunteer homework teaching retired      bus buses gertz laughing movies armenian       amount board flyers hotel lines oppressed realized community harvest masks           dramatic farm fascinating movement pool country built separated houses          poetry hip hop scene colosseum      TF-IDF by Time Period",
+    "crumbs": [
+      "Computational Analysis",
+      "Term Frequencies"
+    ]
+  }
+]
