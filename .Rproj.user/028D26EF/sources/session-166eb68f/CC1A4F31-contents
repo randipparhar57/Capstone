@@ -1,0 +1,45 @@
+# Term Frequencies by Time Period {.unnumbered}
+
+```{r, echo=FALSE, results='asis'}
+cat('<div style="display:flex; flex-direction:column; row-gap:75px;">')
+  # TIME BIN 1
+  cat('<div>')
+    cat(xfun::file_string("output/pfin_termtime_1930s-1940s.svg"))
+  cat('</div>')
+    
+  # TIME BIN 2
+  cat('<div>')
+    cat(xfun::file_string("output/pfin_termtime_1950s-1960s.svg"))
+  cat('</div>')
+  
+  # TIME BIN 3
+  cat('<div>')
+    cat(xfun::file_string("output/pfin_termtime_1970s-1980s.svg"))
+  cat('</div>')
+  
+  # TIME BIN 4
+  cat('<div>')
+    cat(xfun::file_string("output/pfin_termtime_1980s-1990s.svg"))
+  cat('</div>')
+
+  # TIME BIN 5
+  cat('<div>')
+    cat(xfun::file_string("output/pfin_termtime_1990s-2000s.svg"))
+  cat('</div>')    
+
+  # TIME BIN 6
+  cat('<div>')
+    cat(xfun::file_string("output/pfin_termtime_2010s-2020s.svg"))
+  cat('</div>')
+  
+  # TIME BIN 7
+  cat('<div>')
+    cat(xfun::file_string("output/pfin_termtime_Pre-COVID.svg"))
+  cat('</div>')
+  
+  # TIME BIN 8
+  cat('<div>')
+    cat(xfun::file_string("output/pfin_termtime_Unknown.svg"))
+  cat('</div>')
+cat('</div>')  
+```

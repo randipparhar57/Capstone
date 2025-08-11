@@ -1,3 +1,0 @@
-# Qualitative Analysis {.unnumbered}
-
-Overview of what qualitative analysis is, what tools used in R, and how data was explored and analyzed.

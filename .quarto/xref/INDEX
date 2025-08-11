@@ -34,5 +34,23 @@
   },
   "topic_model.qmd": {
     "topic_model.html": "e0513d61"
+  },
+  "future.qmd": {
+    "future.html": "148a5bc6"
+  },
+  "next.qmd": {
+    "next.html": "100d3b18"
+  },
+  "termid.qmd": {
+    "termid.html": "9e5ccc01"
+  },
+  "termtime.qmd": {
+    "termtime.html": "8556317e"
+  },
+  "ngramsid.qmd": {
+    "ngramsid.html": "9249e6d5"
+  },
+  "ngramstime.qmd": {
+    "ngramstime.html": "7492efbd"
   }
 }

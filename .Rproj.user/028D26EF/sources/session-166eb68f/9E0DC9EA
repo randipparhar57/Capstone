@@ -3,7 +3,7 @@
     "path": "~/Documents/RANDIP/capstone/analysis_website/website_project/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "2242049871",
     "contents": "",
     "dirty": false,
     "created": 1752803506957.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "24,0",
+        "cursorPosition": "9,22",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1754011362,
+    "lastKnownWriteTime": 1754881774,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1754011447920,
+    "last_content_update": 1754881774578,
     "read_only": false,
     "read_only_alternatives": []
 }

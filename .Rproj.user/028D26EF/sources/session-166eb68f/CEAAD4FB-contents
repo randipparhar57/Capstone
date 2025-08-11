@@ -1,0 +1,860 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={From Stories to Strategy: Oral Histories as Qualitative Evidence for Neighborhood Planning},
+  pdfauthor={Randip Parhar},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{From Stories to Strategy: Oral Histories as Qualitative Evidence
+for Neighborhood Planning}
+\author{Randip Parhar}
+\date{2025-08-01}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+\markboth{Preface}{Preface}
+
+Explain what this website will consist of. Acknowledgements.
+
+\bookmarksetup{startatroot}
+
+\chapter*{Introduction}\label{introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\markboth{Introduction}{Introduction}
+
+Explain inspiration for project. Provide context and explanation.
+
+\part{Computation Analysis}
+
+\chapter*{Metadata Analysis}\label{metadata-analysis}
+\addcontentsline{toc}{chapter}{Metadata Analysis}
+
+\markboth{Metadata Analysis}{Metadata Analysis}
+
+\phantomsection\label{nqkmioyldm}
+Spatial Metadata
+
+All locations referenced in interviews pertaining to Jamaica, Queens,
+NY.
+
+Location
+
+N
+
+Jamaica, Queens, NY
+
+14 (87.50\%)
+
+Flushing, Queens, NY
+
+3 (18.75\%)
+
+Forest Hills, Queens, NY
+
+3 (18.75\%)
+
+Queens College, Queens, NY
+
+3 (18.75\%)
+
+Manhattan, NY
+
+2 (12.50\%)
+
+Jamaica Estates, Queens, NY
+
+1 (6.25\%)
+
+Jamaica Hills, Queens, NY
+
+1 (6.25\%)
+
+{Count and Percentage shows the proportion of interviews where the
+location was mentioned. Example: Manhattan, NY appears in 13\% of all
+interviews.}
+
+The following locations were each mentioned once:
+
+{Bronx locations: Hunts Point}
+
+{Brooklyn locations: Bedford-Stuyvesant}
+
+{Manhattan locations: Chelsea, Yorkville}
+
+{Queens locations: Bayside, Douglaston, Flushing Meadows Corona Park,
+Forest Park, Fresh Meadows, Hillcrest, Hollis, Jackson Heights, Kew
+Gardens Hills, Ozone Park, Queens Village, Queensborough Community
+College, Richmond Hill, Ridgewood}
+
+{Long Island locations: Commack, Roslyn}
+
+{Other locations in the U.S.: Los Angeles, Rhode Island, Southern
+California, Southern Florida}
+
+{Locations outside the U.S.: Czechoslovakia, Guyana, Istanbul}
+
+\phantomsection\label{upwxewdirp}
+Ancestries Mentioned by Interviewees
+
+Ancestry
+
+N
+
+Guyanese
+
+3 (18.75\%)
+
+German
+
+2 (12.50\%)
+
+Polish
+
+2 (12.50\%)
+
+Armenian
+
+1 (6.25\%)
+
+Barbadian
+
+1 (6.25\%)
+
+Czech
+
+1 (6.25\%)
+
+Haitian
+
+1 (6.25\%)
+
+Indian
+
+1 (6.25\%)
+
+Irish
+
+1 (6.25\%)
+
+Italian
+
+1 (6.25\%)
+
+Jamaican
+
+1 (6.25\%)
+
+{Count and Percentage shows the proportion of interviews in which the
+ancestry was mentioned. Example: German ancestry is mentioned in 13\% of
+all interviews.}
+
+\phantomsection\label{xwwxkywnhd}
+Earliest Recalled Year
+
+Temporal Start
+
+N
+
+1950
+
+6 (37.50\%)
+
+1970
+
+2 (12.50\%)
+
+1980
+
+2 (12.50\%)
+
+1940
+
+1 (6.25\%)
+
+1946
+
+1 (6.25\%)
+
+1960
+
+1 (6.25\%)
+
+1990
+
+1 (6.25\%)
+
+1997
+
+1 (6.25\%)
+
+2020
+
+1 (6.25\%)
+
+{Count and percentage represent the proportion of interviews with a
+specific start year. Example: 38\% of the interviews include memories
+dating back to 1950.}
+
+\phantomsection\label{iglpknrcux}
+Latest Recalled Year
+
+Temporal End
+
+N
+
+2020
+
+7 (43.75\%)
+
+2021
+
+5 (31.25\%)
+
+2023
+
+2 (12.50\%)
+
+1960
+
+1 (6.25\%)
+
+1992
+
+1 (6.25\%)
+
+{Count and percentage represent the proportion of interviews with a
+specific start year. Example: 32\% of the interviews include memories
+extending up to 2021.}
+
+\phantomsection\label{sirkdyzdfs}
+Temporal Contexts of Interviewee Dialogue Segments Set in Jamaica,
+Queens
+
+Time Period
+
+N
+
+1950s-1960s
+
+175 (46.92\%)
+
+1970s-1980s
+
+62 (16.62\%)
+
+2010s-2020s
+
+47 (12.60\%)
+
+1990s-2000s
+
+46 (12.33\%)
+
+Unknown
+
+20 (5.36\%)
+
+Pre-COVID
+
+14 (3.75\%)
+
+1980s-1990s
+
+7 (1.88\%)
+
+1930s-1940s
+
+2 (0.54\%)
+
+{Count and percentage represent the proportion of Jamaica dialogue
+segments from interviewees occurring within a specific time period. For
+example, 47\% of the segments reflect memories from the 1950s--1960s.
+The most recent memory dates back to 2023.}
+
+\phantomsection\label{advpetrwmy}
+Temporal Distribution of Interviews Featuring Memories Set in Jamaica,
+Queens
+
+Time Period
+
+N
+
+2010s-2020s
+
+11 (68.75\%)
+
+1950s-1960s
+
+7 (43.75\%)
+
+1970s-1980s
+
+6 (37.50\%)
+
+1990s-2000s
+
+6 (37.50\%)
+
+1980s-1990s
+
+2 (12.50\%)
+
+Pre-COVID
+
+2 (12.50\%)
+
+Unknown
+
+2 (12.50\%)
+
+1930s-1940s
+
+1 (6.25\%)
+
+{Count and percentage represent the proportion of interviews conducted
+with references to Jamaica, Queens, during each time period. For
+example, 69\% of the interviews included memories from the
+2010s--2020s.}
+
+\phantomsection\label{ixvitcnhti}
+Date the Interview was Conducted
+
+Interview Conducted
+
+N
+
+2020-12
+
+4 (25.00\%)
+
+2020-10
+
+2 (12.50\%)
+
+2020-11
+
+2 (12.50\%)
+
+2021-02
+
+2 (12.50\%)
+
+2021-03
+
+1 (6.25\%)
+
+2021-05
+
+1 (6.25\%)
+
+2021-06
+
+1 (6.25\%)
+
+2023-02
+
+1 (6.25\%)
+
+2023-04
+
+1 (6.25\%)
+
+2023-05
+
+1 (6.25\%)
+
+{Count and percentage represent the proportion of interviews conducted
+during specific time periods. For example, 25\% of the interviews were
+conducted in December 2020.}
+
+\chapter*{Term Frequencies by
+Interview}\label{term-frequencies-by-interview}
+\addcontentsline{toc}{chapter}{Term Frequencies by Interview}
+
+\markboth{Term Frequencies by Interview}{Term Frequencies by Interview}
+
+47 26 16 15 14 parents kids mom community school ID 1854 Frequency 0.015
+0.013 0.012 0.012 0.012 diner godfather teacher mom colosseum ID 1854
+TF-IDF
+
+XINTERVIEWEEX was born in Jamaica, Queens, in 1982; her parents are from
+Barbados, and first landed in BedStuy Brooklyn, before moving to
+Jamaica, Queens. XINTERVIEWEEX attended elementary school at Holy
+Trinity Community School in Hollis, a safe space with a mix of all
+different ethnicities; her transition to public school starting in sixth
+grade was difficult, fights broke out almost every day, and at Jamaica
+High School there was gang activity and metal detectors had to be put
+in. She discusses changes in the neighborhood over time, how dangerous
+it was in the early 90's, jobs she had, and places she hung out - like
+the Queens Public Library on Merrick Boulevard and especially the
+Colosseum Mall, where teens from all over the neighborhood would
+congregate. XINTERVIEWEEX talks about cultural institutions in the
+neighborhood such as the African Poetry Theater and Jamaica Center for
+Arts, and how she started Art, Food \& Soul after she graduated from
+college as an event where the community could showcase their talents
+without having to leave the neighborhood to perform or see performances.
+
+7 6 6 6 6 bus buses laughs program people ID 5796 Frequency 0.056 0.034
+0.034 0.028 0.028 chartered queensborough buses program laughs ID 5796
+TF-IDF
+
+XINTERVIEWEEX discusses growing up and attending public schools in the
+Bronx and Brooklyn in the 1950s-1960s, and then attending Queensborough
+Community College and Queens College in the 1960s. She discusses the
+formation of the student group Black Concern at Queens College, which
+``came out of the need for classes and coursework that reflected Black
+people.'' She describes meeting her future husband, XHUSBANDX, who
+served as chairman of the group, as well as a sit-in that the group
+staged in the spring of 1968.
+
+6 5 5 5 4 4 4 4 4 4 bus center donut loved phonetic suphtin fun gertz
+pizza shop ID 11854 Frequency 0.035 0.035 0.026 0.026 0.026 0.026 0.026
+0.026 elevated hamster hamsters savings woolworth's pizza donut suphtin
+ID 11854 TF-IDF
+
+In part one of this interview, XINTERVIEWEEX talks about what life was
+like in east Richmond Hill for a kid in the 50's and 60's. During her
+childhood the area was modest single family homes with yards, full of
+white families of European descent -- Polish and Irish. She describes
+the different grocery stores in the area like King Kullen; her uncle had
+a produce store in Richmond Hill that they would go to as well. She and
+her friends would ride bikes, play stickball, and roller skate around
+Richmond Hill and Kew Gardens for fun, and when she was older they would
+take the bus to Jamaica Center and go shopping at Gertz or Woolworth's.
+As a teenager she went to dances in the auditorium at Mary Immaculate
+Hospital, go to movies at all the big theaters along Jamaica Avenue, and
+get ice cream at Jahn's Ice Cream Parlor.
+
+14 4 3 3 3 3 3 art feel forward meet paper hoping people ID 14964
+Frequency 0.091 0.068 0.051 0.045 0.045 0.045 0.045 0.045 cart closely
+flux project remotely paper forward hoping ID 14964 TF-IDF
+
+XINTERVIEWEEX is a visual artist who lives and works in Jamaica, Queens.
+Her parents came from Haiti in the 1950s and her family has lived in
+Jamaica, Queens more than 20 years. In this interview, she talks about
+the activities she has hosted to spread art in Queens and how it has
+helped her bond with the community. She also talks about the struggles
+she has faced in light of the COVID-19 pandemic and how adapting to it
+was easier than she initially thought.
+
+10 5 4 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 anymore bloomberg building
+condominium court el failing family grew hill library macy's richmond
+schools apartment mother loved school ID 15983 Frequency 0.046 0.046
+0.046 0.027 0.024 loved mother bloomberg condominium failing ID 15983
+TF-IDF
+
+A native of Jamaica, Queens, XINTERVIEWEEX graduated from Queens College
+in 1969 and went on to have successful careers as a teacher, museum
+educator and school librarian. In this interview, XINTERVIEWEEX focuses
+on her years at Queens College as a member and later president of the
+Doll House house plan. She describes the vibrant social life of the
+women's and men's house plans, including the annual Follies and Frolics
+competitions, and calls the experience life-changing. She also paints a
+picture of the college just on the verge of change, as student protests
+grew more prevalent and open admissions took effect just after her
+graduation.
+
+16 14 9 6 6 6 church mom talk people kids library ID 18854 Frequency
+0.03 0.025 0.025 0.019 0.019 0.019 0.019 homework tutoring volunteer
+section programs retired library ID 18854 TF-IDF
+
+XINTERVIEWEEX was a teacher for approximately 50 years in New York City
+and her native Guyana before recently retiring. In this interview, she
+discusses how she got started teaching, her satisfaction with her career
+path, and the volunteer activities she's pursued in her retirement. She
+also reflects on her family, her role in the community and her
+long-standing involvement with Queens Public Library's Central branch,
+just a few minutes' walk from her home.
+
+28 19 15 13 12 found feel music people school ID 20854 Frequency 0.015
+0.015 0.015 0.012 0.012 0.012 dude legendary shit hip hop jazz ID 20854
+TF-IDF
+
+XINTERVIEWEEX talks about coming of age as an artist in Jamaica in the
+80s/90s and growing up in an Guyanese immigrant household. He discusses
+finding himself through his creative voice and the role of mentors in
+his life. He speaks of learning about and taking pride in the rich
+musical history of Queens, becoming a teaching artist, and art as a form
+of resistance to gentrification.
+
+18 13 9 8 7 couple people grew black community ID 46605 Frequency 0.035
+0.032 0.028 0.026 0.026 community selling mentality black instance ID
+46605 TF-IDF
+
+XINTERVIEWEEX, discusses growing up in Jamaica, Queens, finding
+community through poetry, and how the COVID-19 pandemic has affected his
+ability to perform poetry live. XINTERVIEWEEX also speaks about his life
+in Rhode Island and his return visits to New York City and his old
+neighborhood in Jamaica.
+
+7 6 6 5 3 3 3 lines move thursday line food masks people ID 60854
+Frequency 0.129 0.064 0.054 0.048 0.043 0.043 0.043 0.043 double mask
+mondays pantry lines food thursday masks ID 60854 TF-IDF
+
+XINTERVIEWEEX has been attending the Greater Allen AME Cathedral since
+he was an infant. Today he serves as Outreach Minister. In this
+interview, XINTERVIEWEEX talks about the impact the COVID-19 pandemic
+has had on his community. Many members have died, it's hard to stay in
+touch with elderly who do not have their private phone lines and food
+insecurity has grown. They are learning how to continue their work in
+spite of the pandemic, for example, learning to do Bible study on Zoom
+and having outdoor events.
+
+6 4 3 2 2 2 2 2 2 2 2 2 2 2 2 2 artists black feel leather left memories
+nest pictures preserving produce spot story york picture live people ID
+70505 Frequency 0.058 0.051 0.051 0.051 0.031 0.031 leather pictures
+nest preserving produce picture ID 70505 TF-IDF
+
+In this interview XINTERVIEWEEX talks about her life as an artist and
+her background coming from the South. She talks about how the Northern
+and Southern lifestyles were very different. Additionally, XINTERVIEWEEX
+expresses her feelings on the rise of the BLM (Black Lives Matter)
+movement as well as her aspirations for the upcoming year.
+
+25 16 14 14 10 friends park school people family ID 70854 Frequency
+0.021 0.018 0.015 0.014 0.012 0.012 0.012 0.012 garden joe stacks tilly
+move idea backyard spend ID 70854 TF-IDF
+
+XNAMEX, an anthropologist who teaches and lives in Binghamton NY, was
+born in Jamaica, Queens in 1970 and lived in her family home in Jamaica
+Hills until 1992. At the time, Jamaica Hills had many Greek families
+because of the proximity to St.~Demetrius, but there were numerous
+ethnicities and her family had an Italian and Irish background; it was
+predominantly a white neighborhood until the 1980's when it became more
+diverse and the families she had known were starting to move to the
+suburbs. XNAMEX mentions neighborhood spots that were a part of her
+childhood like Joe Austin Park, Captain Tilly Park, and the Central
+Library on Merrick Boulevard, which she visited at least once a week.
+She also talks about the different schools she attended in the area,
+shopping at Gertz, May's and later the mall on Jamaica Avenue, and how
+people would hang out on their stoops in the summer.
+
+21 19 18 18 16 mother armenian people school father ID 80854 Frequency
+0.036 0.018 0.016 0.016 0.015 laughing boots turkish father armenian ID
+80854 TF-IDF
+
+XINTERVIEWEEX is an Armenian American who was born in Turkey. In 1960 at
+age 12 she and her family moved to Jamaica, Queens when her father took
+a job as a priest at St.~Illuminators Armenian Apostolic church in
+Manhattan. XINTERVIEWEEX describes how safe Jamaica was when she moved
+there, and also the different ethnicities on 168th Street where she
+lived - there were not many Armenians, but she would look out for them
+at shops, and made an Armenian friend at school. School was easier in
+the US compared to in Istanbul, and she later went to Jamaica High
+School, which at the time was one of the best schools in the city. She
+talks about the different shops and movie theaters on Jamaica Avenue in
+the 1960's and going to the library on Parsons Boulevard, and what she
+would do as a teenager with her friends in the area. By High School her
+father had moved to St.~Sarkis Armenian Apostolic Church in Bayside, and
+after a few dangerous incidents - including their house in Jamaica being
+broken into - the family moved to Kew Gardens / Briarwood in 1974 where
+there were more Armenians living. XINTERVIEWEEX worked as a court
+interpreter for Armenian and Turkish speakers in NYC.
+
+21 9 9 8 8 8 bus grade white catholic children school ID 90854 Frequency
+0.031 0.027 0.021 0.021 0.018 children movie movies grade catholic ID
+90854 TF-IDF
+
+Retired New Jersey State Court Judge XINTERVIEWEEX was born in Harlem in
+1943 and moved with his family to Jamaica Queens around age eight. He
+was one of four or five black children when he came to St.~Clement Pope
+School in South Ozone Park from his African-American/Caribbean
+neighborhood in Harlem to what at the time was a mostly white catholic
+neighborhood with families of Polish, Irish, and Italian descent -- over
+time the black children increased and the numbers of the white children
+decreased as the white children moved. He also discusses transportation
+in the area in the 1950's, going to see movies and shopping at Jamaica
+Center, his summer jobs, and going to Archbishop Molloy HS where he was
+the only black person in his class. He also talks about discrimination
+in High School and later when he attended college at Seton Hall
+University in New Jersey, but also how that was a time when the world
+started to change with the civil rights movement 1960s.
+
+6 6 5 4 4 4 4 church city guy stuff park building people ID 93964
+Frequency 0.031 0.031 0.023 0.022 0.021 0.021 0.021 montgomery tour true
+building cops forensic wards ID 93964 TF-IDF
+
+XINTERVIEWEEX has been the caretaker of Rufus King Manor since 1989 and
+has an encyclopedic knowledge of Rufus King. He is a passionate advocate
+for King as an overlooked founding father whose anti-slavery views and
+actions influenced many others. He talks about the museum's exhibits,
+visitors, visiting scholars, and Citizenship Day events. He talks about
+how he came to take the job after working for 30 years in radio. Also
+mentions a subway ride he took in 1989 with Charlie Redell, where they
+travelled on every line for a 66 hour trip, and which garnered media
+attention.
+
+3 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 anymore built buy center
+clothes clothing commercialization feeling's indian kissena knit live
+mom rises sewing shopping stitch stores suits tight wear crowded growing
+fabric ID 371101 Frequency 0.297 0.198 0.099 0.099 0.099 0.099 0.099
+0.099 0.099 0.099 commercialization feeling's indian kissena knit rises
+stitch tight crowded fabric ID 371101 TF-IDF
+
+XINTERVIEWEEX is a Hollis resident who graduated from Queens College and
+worked as a substitute teacher at the start of the COVID-19 pandemic.
+XINTERVIEWEEX describes her childhood growing up in Fresh Meadows
+through 2014, when she moved to Hollis during senior year of high
+school. XINTERVIEWEEX shares fond memories of close-knit neighbors and
+small businesses in Fresh Meadows as well as her positive experience
+attending the local elementary school, P.S. 154. XINTERVIEWEEX recalls
+her subsequent social struggles, particularly as a student at Forest
+Hills High School, and her thought process when she applied for
+colleges. XINTERVIEWEEX discusses her decision to study math education
+at Queens College with the goal of becoming a teacher. XINTERVIEWEEX
+details her experience working as a substitute teacher at Forest Hills
+High School in early 2020 at the start of the COVID-19 pandemic,
+particularly helping to set up an online learning environment and
+reaching out to students who were not attending classes. XINTERVIEWEEX
+concludes by discussing her fondness for Flushing Meadows Corona Park
+and Forest Park.
+
+4 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 basketball childhood growing john's
+kid kindergarten league meeting memories overload school sensory sort st
+tricks magic manhattan team ID 585801 Frequency 0.101 0.076 0.05 0.05
+0.05 0.05 0.05 john's league overload sensory tricks magic team ID
+585801 TF-IDF
+
+XINTERVIEWEEX is a veteran talent executive and the founder of his own
+talent agency, MLB Booking. After graduating from Jamaica High School,
+XINTERVIEWEEX pursued his undergraduate studies at Queens College. As a
+student, he had short stints in the band and as an engineer at the radio
+station before ultimately finding his passion as a member of the Concert
+Committee. In 1977 and 1978, XINTERVIEWEEX served as the Concert
+Chairman for the College Union Program Board, a role that enabled him to
+recruit talent (e.g., Meatloaf, Hall \& Oates, Peter Allen, etc.) to be
+showcased on campus. After completing a summer job with Billy Joel's
+agent in 1978, he accepted a full-time job offer at the same agency,
+which would also represent Paul Simon (Queens College Class of 1963).
+XINTERVIEWEEX continued to build his career in New York until 1989, when
+he relocated to Los Angeles to pursue further professional opportunities
+in the talent business. In this interview, XINTERVIEWEEX recalls his
+childhood in Queens and his student days on campus, including the
+Concert Committee activities that laid the foundation for his successful
+career in entertainment. He recounts signing some of the biggest talents
+in the business -- from Rodney Dangerfield to Madonna to Jerry Seinfeld
+to Celine Dion -- and running departments at all four of the top major
+agencies before founding his own. XINTERVIEWEEX reflects on the greatest
+rewards of his career and where it has taken him, from Colden Auditorium
+to the grandest stages in the world, while never forgetting where he
+came from and his strong Queens roots.
+
+\chapter*{Term Frequencies by Time
+Period}\label{term-frequencies-by-time-period}
+\addcontentsline{toc}{chapter}{Term Frequencies by Time Period}
+
+\markboth{Term Frequencies by Time Period}{Term Frequencies by Time
+Period}
+
+\chapter*{N Grams}\label{n-grams}
+\addcontentsline{toc}{chapter}{N Grams}
+
+\markboth{N Grams}{N Grams}
+
+\chapter*{Topic Modeling}\label{topic-modeling}
+\addcontentsline{toc}{chapter}{Topic Modeling}
+
+\markboth{Topic Modeling}{Topic Modeling}
+
+\part{Applications and Future Work}
+
+\chapter*{Future Work}\label{future-work}
+\addcontentsline{toc}{chapter}{Future Work}
+
+\markboth{Future Work}{Future Work}
+
+RQDA
+
+\chapter*{Applications}\label{applications}
+\addcontentsline{toc}{chapter}{Applications}
+
+\markboth{Applications}{Applications}
+
+Real-world applications
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\phantomsection\label{refs}
+
+
+
+
+\end{document}

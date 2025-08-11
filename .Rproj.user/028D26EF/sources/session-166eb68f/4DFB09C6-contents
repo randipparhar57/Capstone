@@ -1,0 +1,182 @@
+# N Grams by Interview {.unnumbered}
+
+```{r, echo=FALSE, results='asis'}
+cat('<div style="display:flex; flex-direction:column; row-gap:75px;">')
+  # INTERVIEW 1
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_1854.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX was born in Jamaica, Queens, in 1982; her parents are from Barbados, and first landed in BedStuy Brooklyn, before moving to Jamaica, Queens. XINTERVIEWEEX attended elementary school at Holy Trinity Community School in Hollis, a safe space with a mix of all different ethnicities; her transition to public school starting in sixth grade was difficult, fights broke out almost every day, and at Jamaica High School there was gang activity and metal detectors had to be put in. She discusses changes in the neighborhood over time, how dangerous it was in the early 90’s, jobs she had, and places she hung out - like the Queens Public Library on Merrick Boulevard and especially the Colosseum Mall, where teens from all over the neighborhood would congregate. XINTERVIEWEEX talks about cultural institutions in the neighborhood such as the African Poetry Theater and Jamaica Center for Arts, and how she started Art, Food & Soul after she graduated from college as an event where the community could showcase their talents without having to leave the neighborhood to perform or see performances.")
+    cat('</div>')
+  cat('</div>')
+  
+  # INTERVIEW 2
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_5796.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX discusses growing up and attending public schools in the Bronx and Brooklyn in the 1950s-1960s, and then attending Queensborough Community College and Queens College in the 1960s. She discusses the formation of the student group Black Concern at Queens College, which “came out of the need for classes and coursework that reflected Black people.” She describes meeting her future husband, XHUSBANDX, who served as chairman of the group, as well as a sit-in that the group staged in the spring of 1968.")
+    cat('</div>')
+  cat('</div>')
+
+  # INTERVIEW 3
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_11854.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("In part one of this interview, XINTERVIEWEEX talks about what life was like in east Richmond Hill for a kid in the 50’s and 60’s. During her childhood the area was modest single family homes with yards, full of white families of European descent – Polish and Irish.  She describes the different grocery stores in the area like King Kullen; her uncle had a produce store in Richmond Hill that they would go to as well. She and her friends would ride bikes, play stickball, and roller skate around Richmond Hill and Kew Gardens for fun, and when she was older they would take the bus to Jamaica Center and go shopping at Gertz or Woolworth's. As a teenager she went to dances in the auditorium at Mary Immaculate Hospital, go to movies at all the big theaters along Jamaica Avenue, and get ice cream at Jahn's Ice Cream Parlor.")
+    cat('</div>')
+  cat('</div>')
+  
+  # INTERVIEW 4
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_14964.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX is a visual artist who lives and works in Jamaica, Queens. Her parents came from Haiti in the 1950s and her family has lived in Jamaica, Queens more than 20 years. In this interview, she talks about the activities she has hosted to spread art in Queens and how it has helped her bond with the community. She also talks about the struggles she has faced in light of the COVID-19 pandemic and how adapting to it was easier than she initially thought.")
+    cat('</div>')
+  cat('</div>')
+  
+  # INTERVIEW 5
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_15983.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("A native of Jamaica, Queens, XINTERVIEWEEX graduated from Queens College in 1969 and went on to have successful careers as a teacher, museum educator and school librarian. In this interview, XINTERVIEWEEX focuses on her years at Queens College as a member and later president of the Doll House house plan. She describes the vibrant social life of the women’s and men’s house plans, including the annual Follies and Frolics competitions, and calls the experience life-changing. She also paints a picture of the college just on the verge of change, as student protests grew more prevalent and open admissions took effect just after her graduation.")
+    cat('</div>')
+  cat('</div>')
+  
+  # INTERVIEW 6
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_18854.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX was a teacher for approximately 50 years in New York City and her native Guyana before recently retiring. In this interview, she discusses how she got started teaching, her satisfaction with her career path, and the volunteer activities she’s pursued in her retirement. She also reflects on her family, her role in the community and her long-standing involvement with Queens Public Library’s Central branch, just a few minutes’ walk from her home.")
+    cat('</div>')
+  cat('</div>')
+  
+  # INTERVIEW 7
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_20854.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX talks about coming of age as an artist in Jamaica in the 80s/90s and growing up in an Guyanese immigrant household. He discusses finding himself through his creative voice and the role of mentors in his life. He speaks of learning about and taking pride in the rich musical history of Queens, becoming a teaching artist, and art as a form of resistance to gentrification.")
+    cat('</div>')
+  cat('</div>')
+  
+  # INTERVIEW 8
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_46605.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX, discusses growing up in Jamaica, Queens, finding community through poetry, and how the COVID-19 pandemic has affected his ability to perform poetry live. XINTERVIEWEEX also speaks about his life in Rhode Island and his return visits to New York City and his old neighborhood in Jamaica.")
+    cat('</div>')
+  cat('</div>')
+
+  # INTERVIEW 9
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_60854.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX has been attending the Greater Allen AME Cathedral since he was an infant. Today he serves as Outreach Minister. In this interview, XINTERVIEWEEX talks about the impact the COVID-19 pandemic has had on his community. Many members have died, it's hard to stay in touch with elderly who do not have their private phone lines and food insecurity has grown. They are learning how to continue their work in spite of the pandemic, for example, learning to do Bible study on Zoom and having outdoor events.")
+    cat('</div>')
+  cat('</div>')
+
+  # INTERVIEW 10
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_70505.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("In this interview XINTERVIEWEEX talks about her life as an artist and her background coming from the South. She talks about how the Northern and Southern lifestyles were very different. Additionally, XINTERVIEWEEX expresses her feelings on the rise of the BLM (Black Lives Matter) movement as well as her aspirations for the upcoming year.")
+    cat('</div>')
+  cat('</div>')    
+
+  # INTERVIEW 11
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_70854.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XNAMEX, an anthropologist who teaches and lives in Binghamton NY, was born in Jamaica, Queens in 1970 and lived in her family home in Jamaica Hills until 1992. At the time, Jamaica Hills had many Greek families because of the proximity to St. Demetrius, but there were numerous ethnicities and her family had an Italian and Irish background; it was predominantly a white neighborhood until the 1980’s when it became more diverse and the families she had known were starting to move to the suburbs. XNAMEX mentions neighborhood spots that were a part of her childhood like Joe Austin Park, Captain Tilly Park, and the Central Library on Merrick Boulevard, which she visited at least once a week. She also talks about the different schools she attended in the area, shopping at Gertz, May’s and later the mall on Jamaica Avenue, and how people would hang out on their stoops in the summer.")
+    cat('</div>')
+  cat('</div>')   
+
+  # INTERVIEW 12
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_80854.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX is an Armenian American who was born in Turkey. In 1960 at age 12 she and her family moved to Jamaica, Queens when her father took a job as a priest at St. Illuminators Armenian Apostolic church in Manhattan.  XINTERVIEWEEX describes how safe Jamaica was when she moved there, and also the different ethnicities on 168th Street where she lived - there were not many Armenians, but she would look out for them at shops, and made an Armenian friend at school. School was easier in the US compared to in Istanbul, and she later went to Jamaica High School, which at the time was one of the best schools in the city. She talks about the different shops and movie theaters on Jamaica Avenue in the 1960’s and going to the library on Parsons Boulevard, and what she would do as a teenager with her friends in the area. By High School her father had moved to St. Sarkis Armenian Apostolic Church in Bayside, and after a few dangerous incidents - including their house in Jamaica being broken into - the family moved to  Kew Gardens / Briarwood  in 1974 where there were more Armenians living. XINTERVIEWEEX worked as a court interpreter for Armenian and Turkish speakers in NYC.")
+    cat('</div>')
+  cat('</div>')
+
+  # INTERVIEW 13
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_90854.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("Retired New Jersey State Court Judge XINTERVIEWEEX was born in Harlem in 1943 and moved with his family to Jamaica Queens around age eight. He was one of four or five black children when he came to St. Clement Pope School in South Ozone Park from his African-American/Caribbean neighborhood in Harlem to what at the time was a mostly white catholic neighborhood with families of Polish, Irish, and Italian descent – over time the black children increased and the numbers of the white children decreased as the white children moved. He also discusses transportation in the area in the 1950’s, going to see movies and shopping at Jamaica Center, his summer jobs, and going to Archbishop Molloy HS where he was the only black person in his class. He also talks about discrimination in High School and later when he  attended college at Seton Hall University in New Jersey, but also how that was a time when the world started to change with the civil rights movement 1960s.")
+    cat('</div>')
+  cat('</div>')   
+
+  # INTERVIEW 14
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_93964.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX has been the caretaker of Rufus King Manor since 1989 and has an encyclopedic knowledge of Rufus King. He is a passionate advocate for King as an overlooked founding father whose anti-slavery views and actions influenced many others. He talks about the museum's exhibits, visitors, visiting scholars, and Citizenship Day events. He talks about how he came to take the job after working for 30 years in radio. Also mentions a subway ride he took in 1989 with Charlie Redell, where they travelled on every line for a 66 hour trip, and which garnered media attention.")
+    cat('</div>')
+  cat('</div>')   
+
+  # INTERVIEW 15
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_371101.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX is a Hollis resident who graduated from Queens College and worked as a substitute teacher at the start of the COVID-19 pandemic. XINTERVIEWEEX describes her childhood growing up in Fresh Meadows through 2014, when she moved to Hollis during senior year of high school. XINTERVIEWEEX shares fond memories of close-knit neighbors and small businesses in Fresh Meadows as well as her positive experience attending the local elementary school, P.S. 154. XINTERVIEWEEX recalls her subsequent social struggles, particularly as a student at Forest Hills High School, and her thought process when she applied for colleges. XINTERVIEWEEX discusses her decision to study math education at Queens College with the goal of becoming a teacher. XINTERVIEWEEX details her experience working as a substitute teacher at Forest Hills High School in early 2020 at the start of the COVID-19 pandemic, particularly helping to set up an online learning environment and reaching out to students who were not attending classes. XINTERVIEWEEX concludes by discussing her fondness for Flushing Meadows Corona Park and Forest Park.")
+    cat('</div>')
+  cat('</div>')   
+  
+  # INTERVIEW 16
+  cat('<div style="display:flex; flex-direction:row; align-items:stretch; gap:50px; height:100%;">')
+    cat('<div style="flex:1;">')
+      cat(xfun::file_string("output/pfin_ngramid_585801.svg"))
+    cat('</div>')
+    
+    cat('<div style="flex:1 1 0; min-width:300px; overflow-y:auto; font-size:12px; font-family:Courier; font-style:italic;">')
+      cat("XINTERVIEWEEX is a veteran talent executive and the founder of his own talent agency, MLB Booking. After graduating from Jamaica High School, XINTERVIEWEEX pursued his undergraduate studies at Queens College. As a student, he had short stints in the band and as an engineer at the radio station before ultimately finding his passion as a member of the Concert Committee. In 1977 and 1978, XINTERVIEWEEX served as the Concert Chairman for the College Union Program Board, a role that enabled him to recruit talent (e.g., Meatloaf, Hall & Oates, Peter Allen, etc.) to be showcased on campus. After completing a summer job with Billy Joel’s agent in 1978, he accepted a full-time job offer at the same agency, which would also represent Paul Simon (Queens College Class of 1963). XINTERVIEWEEX continued to build his career in New York until 1989, when he relocated to Los Angeles to pursue further professional opportunities in the talent business. In this interview, XINTERVIEWEEX recalls his childhood in Queens and his student days on campus, including the Concert Committee activities that laid the foundation for his successful career in entertainment. He recounts signing some of the biggest talents in the business – from Rodney Dangerfield to Madonna to Jerry Seinfeld to Celine Dion – and running departments at all four of the top major agencies before founding his own. XINTERVIEWEEX reflects on the greatest rewards of his career and where it has taken him, from Colden Auditorium to the grandest stages in the world, while never forgetting where he came from and his strong Queens roots.")
+    cat('</div>')
+  cat('</div>')     
+  
+cat('</div>')  
+```

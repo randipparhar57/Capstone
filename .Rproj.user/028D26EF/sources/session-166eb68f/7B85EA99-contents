@@ -1,0 +1,629 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={From Stories to Strategy: Oral Histories as Qualitative Evidence for Neighborhood Planning},
+  pdfauthor={Randip Parhar},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{From Stories to Strategy: Oral Histories as Qualitative Evidence
+for Neighborhood Planning}
+\author{Randip Parhar}
+\date{2025-08-01}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+\markboth{Preface}{Preface}
+
+Explain what this website will consist of. Acknowledgements.
+
+\bookmarksetup{startatroot}
+
+\chapter*{Introduction}\label{introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\markboth{Introduction}{Introduction}
+
+Explain inspiration for project. Provide context and explanation.
+
+\part{Computational Analysis}
+
+Overview of what quantitative analysis is, what tools used in R, and
+what measures were explored.
+
+\chapter*{Metadata Analysis}\label{metadata-analysis}
+\addcontentsline{toc}{chapter}{Metadata Analysis}
+
+\markboth{Metadata Analysis}{Metadata Analysis}
+
+\phantomsection\label{xyvyceppsf}
+Spatial Metadata
+
+All locations referenced in interviews pertaining to Jamaica, Queens,
+NY.
+
+Location
+
+N
+
+Jamaica, Queens, NY
+
+14 (87.50\%)
+
+Flushing, Queens, NY
+
+3 (18.75\%)
+
+Forest Hills, Queens, NY
+
+3 (18.75\%)
+
+Queens College, Queens, NY
+
+3 (18.75\%)
+
+Manhattan, NY
+
+2 (12.50\%)
+
+Jamaica Estates, Queens, NY
+
+1 (6.25\%)
+
+Jamaica Hills, Queens, NY
+
+1 (6.25\%)
+
+{Count and Percentage shows the proportion of interviews where the
+location was mentioned. Example: Manhattan, NY appears in 13\% of all
+interviews.}
+
+The following locations were each mentioned once:
+
+{Bronx locations: Hunts Point}
+
+{Brooklyn locations: Bedford-Stuyvesant}
+
+{Manhattan locations: Chelsea, Yorkville}
+
+{Queens locations: Bayside, Douglaston, Flushing Meadows Corona Park,
+Forest Park, Fresh Meadows, Hillcrest, Hollis, Jackson Heights, Kew
+Gardens Hills, Ozone Park, Queens Village, Queensborough Community
+College, Richmond Hill, Ridgewood}
+
+{Long Island locations: Commack, Roslyn}
+
+{Other locations in the U.S.: Los Angeles, Rhode Island, Southern
+California, Southern Florida}
+
+{Locations outside the U.S.: Czechoslovakia, Guyana, Istanbul}
+
+\phantomsection\label{avihfzlmgt}
+Ancestries Mentioned by Interviewees
+
+Ancestry
+
+N
+
+Guyanese
+
+3 (18.75\%)
+
+German
+
+2 (12.50\%)
+
+Polish
+
+2 (12.50\%)
+
+Armenian
+
+1 (6.25\%)
+
+Barbadian
+
+1 (6.25\%)
+
+Czech
+
+1 (6.25\%)
+
+Haitian
+
+1 (6.25\%)
+
+Indian
+
+1 (6.25\%)
+
+Irish
+
+1 (6.25\%)
+
+Italian
+
+1 (6.25\%)
+
+Jamaican
+
+1 (6.25\%)
+
+{Count and Percentage shows the proportion of interviews in which the
+ancestry was mentioned. Example: German ancestry is mentioned in 13\% of
+all interviews.}
+
+\phantomsection\label{pgnalcjfel}
+Earliest Recalled Year
+
+Temporal Start
+
+N
+
+1950
+
+6 (37.50\%)
+
+1970
+
+2 (12.50\%)
+
+1980
+
+2 (12.50\%)
+
+1940
+
+1 (6.25\%)
+
+1946
+
+1 (6.25\%)
+
+1960
+
+1 (6.25\%)
+
+1990
+
+1 (6.25\%)
+
+1997
+
+1 (6.25\%)
+
+2020
+
+1 (6.25\%)
+
+{Count and percentage represent the proportion of interviews with a
+specific start year. Example: 38\% of the interviews include memories
+dating back to 1950.}
+
+\phantomsection\label{bhatczbyeh}
+Latest Recalled Year
+
+Temporal End
+
+N
+
+2020
+
+7 (43.75\%)
+
+2021
+
+5 (31.25\%)
+
+2023
+
+2 (12.50\%)
+
+1960
+
+1 (6.25\%)
+
+1992
+
+1 (6.25\%)
+
+{Count and percentage represent the proportion of interviews with a
+specific start year. Example: 32\% of the interviews include memories
+extending up to 2021.}
+
+\phantomsection\label{aetrcrmdik}
+Temporal Contexts of Interviewee Dialogue Segments Set in Jamaica,
+Queens
+
+Time Period
+
+N
+
+1950s-1960s
+
+175 (46.92\%)
+
+1970s-1980s
+
+62 (16.62\%)
+
+2010s-2020s
+
+47 (12.60\%)
+
+1990s-2000s
+
+46 (12.33\%)
+
+Unknown
+
+20 (5.36\%)
+
+Pre-COVID
+
+14 (3.75\%)
+
+1980s-1990s
+
+7 (1.88\%)
+
+1930s-1940s
+
+2 (0.54\%)
+
+{Count and percentage represent the proportion of Jamaica dialogue
+segments from interviewees occurring within a specific time period. For
+example, 47\% of the segments reflect memories from the 1950s--1960s.
+The most recent memory dates back to 2023.}
+
+\phantomsection\label{bmwzuksrrg}
+Temporal Distribution of Interviews Featuring Memories Set in Jamaica,
+Queens
+
+Time Period
+
+N
+
+2010s-2020s
+
+11 (68.75\%)
+
+1950s-1960s
+
+7 (43.75\%)
+
+1970s-1980s
+
+6 (37.50\%)
+
+1990s-2000s
+
+6 (37.50\%)
+
+1980s-1990s
+
+2 (12.50\%)
+
+Pre-COVID
+
+2 (12.50\%)
+
+Unknown
+
+2 (12.50\%)
+
+1930s-1940s
+
+1 (6.25\%)
+
+{Count and percentage represent the proportion of interviews conducted
+with references to Jamaica, Queens, during each time period. For
+example, 69\% of the interviews included memories from the
+2010s--2020s.}
+
+\phantomsection\label{dzvfckpfxc}
+Date the Interview was Conducted
+
+Interview Conducted
+
+N
+
+2020-12
+
+4 (25.00\%)
+
+2020-10
+
+2 (12.50\%)
+
+2020-11
+
+2 (12.50\%)
+
+2021-02
+
+2 (12.50\%)
+
+2021-03
+
+1 (6.25\%)
+
+2021-05
+
+1 (6.25\%)
+
+2021-06
+
+1 (6.25\%)
+
+2023-02
+
+1 (6.25\%)
+
+2023-04
+
+1 (6.25\%)
+
+2023-05
+
+1 (6.25\%)
+
+{Count and percentage represent the proportion of interviews conducted
+during specific time periods. For example, 25\% of the interviews were
+conducted in December 2020.}
+
+\chapter*{Term Frequencies}\label{term-frequencies}
+\addcontentsline{toc}{chapter}{Term Frequencies}
+
+\markboth{Term Frequencies}{Term Frequencies}
+
+0.01 0.02 0.01 0.01 0.01 0.02 0.03 0.05 0.05 0.05 0.05 0.13 0.05 0.06
+0.04 0.04 0.04 0.04 0.03 0.02 0.03 0.02 0.02 0.03 0.06 0.03 0.03 0.03
+0.03 0.02 0.03 0.03 0.02 0.02 0.02 0.06 0.03 0.05 0.03 0.05 0.05 0.02
+0.02 0.03 0.03 0.02 0.02 0.02 0.03 0.04 0.04 0.03 0.03 0.03 0.03 0.03
+0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.02 0.02 0.02 0.01 0.01 0.01 0.01
+0.3 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.09 0.07 0.05 0.05 0.05 0.05
+0.05 0.05 0.03 0.03 0.04 0.03 0.03 0.02 0.04 0.02 0.02 0.02 0.1 0.08
+0.05 0.05 0.05 0.05 0.05 90854 93964 371101 585801 60854 70505 70854
+80854 15983 18854 20854 46605 1854 5796 11854 14964 cart closely flux
+project remotely paper forward hoping community selling mentality black
+instance laughing boots turkish father armenian john's league overload
+sensory tricks magic team elevated hamster hamsters savings woolworth's
+pizza donut suphtin dude legendary shit hip hop jazz garden joe stacks
+tilly move idea backyard spend commercialization feeling's indian
+kissena knit rises stitch tight crowded fabric chartered queensborough
+buses program laughs homework tutoring volunteer section programs
+retired library leather pictures nest preserving produce picture
+montgomery tour true building cops forensic wards diner godfather
+teacher mom colosseum loved mother bloomberg condominium failing double
+mask mondays pantry lines food thursday masks children movie movies
+grade catholic TF-IDF by Interview
+
+0.07 0.05 0.04 0.07 0.04 0.04 0.04 0.04 0.04 0.01 0.01 0.01 0.01 0.01
+0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01
+0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.01 0.02 0.02 0.02 0.02 0.02 0.02
+0.03 0.02 0.02 0.02 0.02 0.02 0.02 0.02 0.01 0.01 0.01 0.01 1990s-2000s
+2010s-2020s Pre-COVID Unknown 1930s-1940s 1950s-1960s 1970s-1980s
+1980s-1990s diner cooked lucille's trade ihop brothers liquor power
+sense selling mentality community instance barbados cassettes idea
+teacher godfather spend paper volunteer homework teaching retired bus
+buses gertz laughing movies armenian amount board flyers hotel lines
+oppressed realized community harvest masks dramatic farm fascinating
+movement pool country built separated houses poetry hip hop scene
+colosseum TF-IDF by Time Period
+
+\chapter*{N Grams}\label{n-grams}
+\addcontentsline{toc}{chapter}{N Grams}
+
+\markboth{N Grams}{N Grams}
+
+\chapter*{Topic Modeling}\label{topic-modeling}
+\addcontentsline{toc}{chapter}{Topic Modeling}
+
+\markboth{Topic Modeling}{Topic Modeling}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Qualitative Analysis}\label{qualitative-analysis}
+\addcontentsline{toc}{chapter}{Qualitative Analysis}
+
+\markboth{Qualitative Analysis}{Qualitative Analysis}
+
+Overview of what qualitative analysis is, what tools used in R, and how
+data was explored and analyzed.
+
+\bookmarksetup{startatroot}
+
+\chapter*{Applications}\label{applications}
+\addcontentsline{toc}{chapter}{Applications}
+
+\markboth{Applications}{Applications}
+
+Discuss applications of oral history analysis in urban/neighborhood
+planning - tying back to the intro. Incorporate modern day data on
+themes discussed in oral histories.
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\phantomsection\label{refs}
+
+
+
+
+\end{document}

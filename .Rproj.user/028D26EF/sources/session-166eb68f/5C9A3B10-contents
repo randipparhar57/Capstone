@@ -1,0 +1,3 @@
+.sidebar-navigation {
+  width: 25%; /* Sidebar takes up 25% of the page width */
+}
