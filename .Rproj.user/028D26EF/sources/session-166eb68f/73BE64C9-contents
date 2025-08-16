@@ -1,7 +1,0 @@
----
-title: "load_libs"
-format: html
----
-
-install.packages("xfun") library(xfun)
-install.packages("tinytex") library(tinytex)

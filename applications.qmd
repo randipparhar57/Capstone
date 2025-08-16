@@ -1,4 +1,7 @@
 # Applications {.unnumbered}
 
-Real-world applications
+Given that the intended audience includes city officials, urban planners, and public library institutions, this project would have benefited from incorporating existing NYC Open Data as a concrete source, along with a more detailed discussion of how planning, interviewing, and data analysis can be integrated into a cohesive workflow.
 
+One example of such an approach is exemplified in [The Jamaica Neighborhood Plan’s Voice to Vision](https://v2v-jamaicaplan.ccc-mit.org/),. Through surveys, interviews, and public meetings, they collected input, coded the dialogues, and then quantified this qualitative feedback by mapping it to themes and strategic goals outlined in the plan.
+
+In a similar way, oral histories could serve as another valuable data source. They are especially useful in situations where lived experience offers critical insights. For instance, understanding neighborhood change, preserving community memory, or documenting how residents have historically interacted with public institutions and spaces like schools, libraries, and parks.

@@ -1,15 +1,31 @@
 # Topic Modeling {.unnumbered}
 
+Topic modeling is an unsupervised machine-learning classification method for summarizing textual data through word groups. In short, topic models identify common words in a dataset and group them together under a number of topics. Topic modeling reveals underlying themes characterizing a set of documents, helping thematically annotate large volumes of text.
+
 ```{r, echo=FALSE, results='asis'}
 cat('<div>')
   cat(xfun::file_string("output/p_topics.svg"))
 cat('</div>')
+```
 
+The graph above is displaying the top 10 terms by topic. The are terms with the highest word probabilities for each topic. Select the number of topics is a bit of art and science from what I've learned in this process. The reason I select 6 is because when I went below, I lost the terms highlighted in topic 5 that are related to music. And when I went higher, there was redundancy.
+
+It’s important to keep in mind that there were only 16 interviews, so some topics appear in just a few of them. For instance, topic 5 includes the terms hip, hop, jazz, and music, but only one interview discussed music at all. In a larger collection of text data, however, patterns like this would be more meaningful and valuable for uncovering broader topics.
+
+```{r, echo=FALSE, results='asis'}
 cat('<div>')
   cat(xfun::file_string("output/p_gamma.svg"))
 cat('</div>')
+```
 
+The graph above shows the distribution of document probabilities for each topic. Each topic is strongly associated with 1-4 interviews. Topic 2 has the most interviews linked to it: three with a probability of 1 and two with probabilities close to 1, for a total of five interviews strongly associated with this topic.
+
+```{r, echo=FALSE, results='asis'}
 cat('<div>')
   cat(xfun::file_string("output/p_gamma_time.svg"))
 cat('</div>')
 ```
+
+This final graph shows the distribution of document-topic probabilities over time. For example, topic 1 appears more frequently in memories from the 1950s-1960s, while topic 3 is more common in the 1970s-1980s. Topic 4 spans multiple time periods: 1970s-1980s, 1980s-1990s, 1990s-2000s, and 2010s-2020s. Similarly, topic 5 also spans multiple time periods: 1980s-1990s, 1990s-2000s, and 2010s-2020s.
+
+This temporal perspective is useful for identifying topics associated with specific periods and for understanding how memories reflect changing priorities over time.
